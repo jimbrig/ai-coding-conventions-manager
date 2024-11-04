@@ -1,3 +1,9 @@
-# ai-coding-conventions-manager
+# AI Coding Conventions Manager
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/jimbrig/ai-coding-conventions-manager)
+> [!NOTE]
+> [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/jimbrig/ai-coding-conventions-manager).
+
+## Contents
+
+## Overview
+
