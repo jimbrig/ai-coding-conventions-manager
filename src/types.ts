@@ -1,3 +1,31 @@
+// Convention Types
+export interface ConventionSection {
+  title: string;
+  content: string;
+}
+
+export interface ConventionAuthor {
+  name: string;
+  url?: string;
+  avatar?: string;
+}
+
+export interface Convention {
+  id: string;
+  title: string;
+  description: string;
+  type: 'general' | 'language' | 'framework' | 'custom';
+  category: string;
+  tags: string[];
+  sections: ConventionSection[];
+  references?: string[];
+  createdAt: string;
+  updatedAt: string;
+  author: ConventionAuthor;
+  isActive: boolean;
+}
+
+// Legacy Guideline Type (for backward compatibility)
 export interface Guideline {
   id: string;
   title: string;
@@ -6,17 +34,4 @@ export interface Guideline {
   tags: string[];
   content: string;
   isActive: boolean;
-}
-
-export interface Category {
-  id: 'general' | 'language' | 'framework' | 'custom';
-  label: string;
-  description: string;
-  icon: string;
-}
-
-export interface OutputFormat {
-  id: 'markdown' | 'json' | 'text';
-  label: string;
-  description: string;
 }
