@@ -1,0 +1,22 @@
+{
+  "name": "Vite React TypeScript Starter",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:18",
+  "forwardPorts": [
+    5173
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ms-vsliveshare.vsliveshare",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install"
+}
